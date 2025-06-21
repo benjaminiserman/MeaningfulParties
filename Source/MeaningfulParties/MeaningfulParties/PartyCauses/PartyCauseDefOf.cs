@@ -52,7 +52,54 @@ namespace MeaningfulParties.PartyCauses
         // Others
         public static PartyCauseDef BestowingCeremony;
         public static PartyCauseDef Birthday;
+        public static PartyCauseDef Implant;
+        public static PartyCauseDef Resurrection;
 
+        // Traits
+        public static PartyCauseDef Jealous;
+        public static PartyCauseDef Masochist;
+        public static PartyCauseDef Pyromaniac;
+        public static PartyCauseDef Nimble;
+        public static PartyCauseDef Tough;
+        public static PartyCauseDef TooSmart;
+        public static PartyCauseDef Kind;
+        public static PartyCauseDef CreepyBreathing;
+        public static PartyCauseDef Pride;
+        public static PartyCauseDef Joyous;
+
+        public static PartyCauseDef Industriousness;
+        public static PartyCauseDef NaturalMood;
+        public static PartyCauseDef Nerves;
+        public static PartyCauseDef Beauty;
+
+        // GameCondition_End
+        public static PartyCauseDef PsychicDrone;
+        public static PartyCauseDef ToxicFallout;
+        public static PartyCauseDef VolcanicWinter;
+        public static PartyCauseDef HeatWave;
+        public static PartyCauseDef ColdSnap;
+        public static PartyCauseDef DeathPall;
+        public static PartyCauseDef GrayPall;
+        public static PartyCauseDef UnnaturalDarkness;
+        public static PartyCauseDef NoxiousHaze;
+
+        // Pawn_HealthTracker_RemoveHediff
+        public static PartyCauseDef Plague;
+        public static PartyCauseDef GutWorms;
+        public static PartyCauseDef WoundInfection;
+        public static PartyCauseDef Flu;
+        public static PartyCauseDef Malaria;
+        public static PartyCauseDef SleepingSickness;
+        public static PartyCauseDef Blindness;
+        public static PartyCauseDef Dementia;
+        public static PartyCauseDef Alzheimers;
+        public static PartyCauseDef HeartArteryBlockage;
+        public static PartyCauseDef AlcoholAddiction;
+        public static PartyCauseDef GoJuiceAddiction;
+        public static PartyCauseDef PsychiteAddiction;
+        public static PartyCauseDef SmokeleafAddiction;
+        public static PartyCauseDef WakeUpAddiction;
+      
         public static IEnumerable<PartyCauseDef> GetDefaultPartyCauseDefs()
         {
             return new List<PartyCauseDef>()

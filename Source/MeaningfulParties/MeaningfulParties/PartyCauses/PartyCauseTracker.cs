@@ -73,6 +73,11 @@ namespace MeaningfulParties.PartyCauses
                     {
                         PartyCauseDefOf.Birthday.Push(colonist);
                     }
+
+                    if (Random.Next(10) == 0)
+                    {
+                        TraitCauseHandler.AddTraitPartyCauses(colonist);
+                    }
                 }
             }
 
