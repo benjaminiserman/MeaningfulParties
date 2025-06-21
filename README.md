@@ -12,6 +12,8 @@ Without changing the frequency of parties, colonists will now throw parties over
 - dodging a falling ceiling
 - embracing the void
 
+The full list of party causes can be found [here](https://github.com/benjaminiserman/MeaningfulParties/blob/main/Defs/PartyCauses.xml).
+
 ## Installation
 
  - Go to the [Steam Workshop page](https://steamcommunity.com/sharedfiles/filedetails/?id=3504909699)
