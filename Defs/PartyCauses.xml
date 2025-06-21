@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
   <MeaningfulParties.PartyCauseDef>
     <defName>Perseverance</defName>
     <letterText>the colony's perseverance</letterText>
@@ -21,10 +20,23 @@
   </MeaningfulParties.PartyCauseDef>
   <MeaningfulParties.PartyCauseDef>
     <defName>Serenity</defName>
-    <letterText>the dream of serenity</letterText>
+    <letterText>hope for serenity</letterText>
     <weight>1</weight>
     <daysLength>0</daysLength>
   </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>StillAlive</defName>
+    <letterText>surviving another season</letterText>
+    <weight>1</weight>
+    <daysLength>0</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Fallen</defName>
+    <letterText>the lives of those who have fallen</letterText>
+    <weight>1</weight>
+    <daysLength>0</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+
   <MeaningfulParties.PartyCauseDef>
     <defName>AmbrosiaSprout</defName>
     <letterText>the recent ambrosia sprout</letterText>
@@ -61,6 +73,13 @@
     <weight>25</weight>
     <daysLength>1</daysLength>
   </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>GiveQuest_EndGame_ShipEscape</defName>
+    <letterText>the discovery of a way to escape this planet</letterText>
+    <weight>10</weight>
+    <daysLength>30</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+
   <MeaningfulParties.PartyCauseDef>
     <defName>TamedAnimal</defName>
     <letterText>{TARGET_labelShort}'s taming of {TARGET2_labelShort}</letterText>
@@ -168,13 +187,7 @@
     <letterText>the settlement of a new land</letterText>
     <weight>50</weight>
     <daysLength>25</daysLength>
-  </MeaningfulParties.PartyCauseDef>
-  <MeaningfulParties.PartyCauseDef>
-    <defName>GiveQuest_EndGame_ShipEscape</defName>
-    <letterText>the discovery of a way to escape this planet</letterText>
-    <weight>10</weight>
-    <daysLength>30</daysLength>
-  </MeaningfulParties.PartyCauseDef>
+  </MeaningfulParties.PartyCauseDef> 
   <MeaningfulParties.PartyCauseDef>
     <defName>BuiltSnowman</defName>
     <letterText>the birth of a magical snowman</letterText>
@@ -211,6 +224,7 @@
     <weight>10</weight>
     <daysLength>7</daysLength>
   </MeaningfulParties.PartyCauseDef>
+
   <MeaningfulParties.PartyCauseDef>
     <defName>BestowingCeremony</defName>
     <letterText>{TARGET_labelShort}'s newly bestown powers</letterText>

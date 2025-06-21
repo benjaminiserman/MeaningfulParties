@@ -56,12 +56,18 @@ namespace MeaningfulParties.PartyCauses
             }
         }
 
+        private static readonly IEnumerable<Pawn> ColonistsAndBondedAnimals = Find.Maps
+            .SelectMany(map => map.mapPawns.FreeColonists)
+            .Concat(Find.Maps.SelectMany(map => map.mapPawns.ColonyAnimals)
+                .Where(animal => animal.relations.DirectRelations
+                    .Any(bond => bond.def == PawnRelationDefOf.Bond)));
+
         public override void WorldComponentTick()
         {
             if (_lastDay != GenDate.DaysPassed)
             {
                 _lastDay = GenDate.DaysPassed;
-                foreach (var colonist in Find.Maps.SelectMany(map => map.mapPawns.FreeColonists))
+                foreach (var colonist in ColonistsAndBondedAnimals)
                 {
                     if (colonist.ageTracker.BirthDayOfYear == GenLocalDate.DayOfYear(colonist.Map.Tile))
                     {

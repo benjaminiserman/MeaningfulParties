@@ -11,6 +11,8 @@ namespace MeaningfulParties.PartyCauses
         public static PartyCauseDef GoodTimes;
         public static PartyCauseDef Comradery;
         public static PartyCauseDef Serenity;
+        public static PartyCauseDef StillAlive;
+        public static PartyCauseDef Fallen;
 
         // IncidentWorker_TryExecute
         public static PartyCauseDef AmbrosiaSprout;
@@ -55,7 +57,12 @@ namespace MeaningfulParties.PartyCauses
         {
             return new List<PartyCauseDef>()
             {
-                Perseverance, GoodTimes, Comradery, Serenity
+                Perseverance,
+                GoodTimes,
+                Comradery,
+                Serenity,
+                StillAlive,
+                Fallen
             };
         }
     }
