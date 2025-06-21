@@ -249,6 +249,12 @@
     <weight>1000</weight>
     <daysLength>30</daysLength>
   </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>BabyShower</defName>
+    <letterText>a baby shower for {TARGET_labelShort}</letterText>
+    <weight>500</weight>
+    <daysLength>6</daysLength>
+  </MeaningfulParties.PartyCauseDef>
 
   <MeaningfulParties.PartyCauseDef>
     <defName>Jealous</defName>

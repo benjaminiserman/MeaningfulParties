@@ -54,6 +54,7 @@ namespace MeaningfulParties.PartyCauses
         public static PartyCauseDef Birthday;
         public static PartyCauseDef Implant;
         public static PartyCauseDef Resurrection;
+        public static PartyCauseDef BabyShower;
 
         // Traits
         public static PartyCauseDef Jealous;

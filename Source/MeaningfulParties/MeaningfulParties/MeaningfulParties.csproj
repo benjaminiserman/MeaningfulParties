@@ -60,6 +60,7 @@
         <Compile Include="Patches\CompUseEffect_InstallImplant_DoEffect.cs" />
         <Compile Include="Patches\GameCondition_End.cs" />
         <Compile Include="Patches\GatheringWorker_SendLetter.cs" />
+        <Compile Include="Patches\Hediff_Pregnant_NotifyPlayerOfTrimesterPassing.cs" />
         <Compile Include="Patches\IncidentWorker_TryExecute.cs" />
         <Compile Include="Patches\LordJob_BestowingCeremony_FinishCeremony.cs" />
         <Compile Include="Patches\Pawn_HealthTracker_RemoveHediff.cs" />

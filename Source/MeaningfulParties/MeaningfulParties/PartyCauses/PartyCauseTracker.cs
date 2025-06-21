@@ -13,7 +13,13 @@ namespace MeaningfulParties.PartyCauses
         private readonly List<PartyCause> _partyCauses = new List<PartyCause>();
         private int _lastDay = 0;
 
-        public void PushPartyCause(PartyCause partyCause) => _partyCauses.Add(partyCause);
+        public void PushPartyCause(PartyCause partyCause)
+        {
+            if (!_partyCauses.Any(partyCause.IsDuplicateOf))
+            {
+                _partyCauses.Add(partyCause);
+            }
+        }
 
         public PartyCause PullPartyCause()
         {

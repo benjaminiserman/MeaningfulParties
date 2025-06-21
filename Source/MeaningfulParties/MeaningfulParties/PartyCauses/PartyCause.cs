@@ -15,5 +15,10 @@ namespace MeaningfulParties.PartyCauses
             Day = day;
             Def = def;
         }
+
+        public bool IsDuplicateOf(PartyCause otherCause) =>
+            Def == otherCause.Def
+            && Target == otherCause.Target
+            && Target2 == otherCause.Target2;
     }
 }
