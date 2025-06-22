@@ -31,8 +31,6 @@ namespace MeaningfulParties
                 target2 = def2.defName;
             }
 
-            Log.Message($"test: {targets.Length} {target1} {target2}");
-
             var foundTracker = Find.World.GetComponent<PartyCauseTracker>();
             foundTracker.PushPartyCause(new PartyCause(GenDate.DaysPassed, this)
             {

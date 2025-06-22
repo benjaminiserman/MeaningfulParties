@@ -62,6 +62,7 @@
         <Compile Include="Patches\GatheringWorker_SendLetter.cs" />
         <Compile Include="Patches\Hediff_Pregnant_NotifyPlayerOfTrimesterPassing.cs" />
         <Compile Include="Patches\IncidentWorker_TryExecute.cs" />
+        <Compile Include="Patches\RitualOutcomeEffectWorker_Apply.cs" />
         <Compile Include="Patches\LordJob_BestowingCeremony_FinishCeremony.cs" />
         <Compile Include="Patches\Pawn_HealthTracker_RemoveHediff.cs" />
         <Compile Include="Patches\TaleRecorder_RecordTale.cs" />

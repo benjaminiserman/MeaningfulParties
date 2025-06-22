@@ -13,6 +13,7 @@ namespace MeaningfulParties.PartyCauses
         public static PartyCauseDef Serenity;
         public static PartyCauseDef StillAlive;
         public static PartyCauseDef Fallen;
+        public static PartyCauseDef CalmBeforeStorm;
 
         // IncidentWorker_TryExecute
         public static PartyCauseDef AmbrosiaSprout;
@@ -100,7 +101,32 @@ namespace MeaningfulParties.PartyCauses
         public static PartyCauseDef PsychiteAddiction;
         public static PartyCauseDef SmokeleafAddiction;
         public static PartyCauseDef WakeUpAddiction;
-      
+        
+        // RitualOutcomeEffectWorker_apply
+		public static PartyCauseDef AnimaTreeLinking;
+		public static PartyCauseDef Bestowing;
+		public static PartyCauseDef BlindingCeremony;
+		public static PartyCauseDef ScarificationCeremony;
+		public static PartyCauseDef TreeConnection;
+		public static PartyCauseDef Conversion;
+		public static PartyCauseDef GladiatorDuel;
+		public static PartyCauseDef Execution;
+		public static PartyCauseDef SacrificePrisoner;
+		public static PartyCauseDef RoleChange;
+		public static PartyCauseDef Trial;
+		public static PartyCauseDef ThroneSpeech;
+		public static PartyCauseDef LeaderSpeech;
+
+        // Vanilla Events Expanded compat
+        [MayRequire("VanillaExpanded.VEE")]
+        public static PartyCauseDef VEE_IceAge;
+        [MayRequire("VanillaExpanded.VEE")]
+        public static PartyCauseDef VEE_GlobalWarming;
+        [MayRequire("VanillaExpanded.VEE")]
+        public static PartyCauseDef VEE_PsychicRain;
+        [MayRequire("VanillaExpanded.VEE")]
+        public static PartyCauseDef VEE_LongNight;
+
         public static IEnumerable<PartyCauseDef> GetDefaultPartyCauseDefs()
         {
             return new List<PartyCauseDef>()
@@ -110,7 +136,8 @@ namespace MeaningfulParties.PartyCauses
                 Comradery,
                 Serenity,
                 StillAlive,
-                Fallen
+                Fallen,
+                CalmBeforeStorm
             };
         }
     }

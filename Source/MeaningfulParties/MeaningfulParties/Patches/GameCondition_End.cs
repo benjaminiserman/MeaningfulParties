@@ -19,6 +19,11 @@ namespace MeaningfulParties.Patches
             nameof(PartyCauseDefOf.GrayPall),
             nameof(PartyCauseDefOf.UnnaturalDarkness),
             nameof(PartyCauseDefOf.NoxiousHaze),
+
+            nameof(PartyCauseDefOf.VEE_IceAge),
+            nameof(PartyCauseDefOf.VEE_GlobalWarming),
+            nameof(PartyCauseDefOf.VEE_LongNight),
+            nameof(PartyCauseDefOf.VEE_PsychicRain),
         };
 
         public static void Postfix(GameCondition __instance)

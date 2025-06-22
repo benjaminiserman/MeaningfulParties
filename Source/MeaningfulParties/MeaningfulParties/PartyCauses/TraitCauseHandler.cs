@@ -15,7 +15,7 @@ namespace MeaningfulParties.PartyCauses
                 { TraitDefOf.Pyromaniac, PartyCauseDefOf.Pyromaniac },
                 { TraitDef.Named("Nimble"), PartyCauseDefOf.Nimble },
                 { TraitDef.Named("Tough"), PartyCauseDefOf.Tough },
-                { TraitDef.Named("TooSmart"), PartyCauseDefOf.TooSmart},
+                { TraitDef.Named("TooSmart"), PartyCauseDefOf.TooSmart },
                 { TraitDefOf.Kind, PartyCauseDefOf.Kind },
                 { TraitDefOf.CreepyBreathing, PartyCauseDefOf.CreepyBreathing },
                 { TraitDefOf.Gay, PartyCauseDefOf.Pride },

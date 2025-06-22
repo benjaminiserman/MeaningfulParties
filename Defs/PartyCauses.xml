@@ -36,6 +36,12 @@
     <weight>1</weight>
     <daysLength>0</daysLength>
   </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>CalmBeforeStorm</defName>
+    <letterText>the calm before the storm</letterText>
+    <weight>1</weight>
+    <daysLength>0</daysLength>
+  </MeaningfulParties.PartyCauseDef>
 
   <MeaningfulParties.PartyCauseDef>
     <defName>AmbrosiaSprout</defName>
@@ -226,12 +232,6 @@
   </MeaningfulParties.PartyCauseDef>
 
   <MeaningfulParties.PartyCauseDef>
-    <defName>BestowingCeremony</defName>
-    <letterText>{TARGET_labelShort}'s newly bestown powers</letterText>
-    <weight>100</weight>
-    <daysLength>15</daysLength>
-  </MeaningfulParties.PartyCauseDef>
-  <MeaningfulParties.PartyCauseDef>
     <defName>Birthday</defName>
     <letterText>{TARGET_labelShort}'s birthday</letterText>
     <weight>50</weight>
@@ -254,6 +254,12 @@
     <letterText>a baby shower for {TARGET_labelShort}</letterText>
     <weight>500</weight>
     <daysLength>6</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>BestowingCeremony</defName>
+    <letterText>{TARGET_labelShort}'s newly bestown powers</letterText>
+    <weight>100</weight>
+    <daysLength>15</daysLength>
   </MeaningfulParties.PartyCauseDef>
 
   <MeaningfulParties.PartyCauseDef>
@@ -486,6 +492,104 @@
     <letterText>the cure of {TARGET_labelShort}'s wakeup addiction</letterText>
     <weight>100</weight>
     <daysLength>15</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+
+  <MeaningfulParties.PartyCauseDef>
+    <defName>AnimaTreeLinking</defName>
+    <letterText>the linking of {TARGET_labelShort} to the anima tree</letterText>
+    <weight>200</weight>
+    <daysLength>15</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>BlindingCeremony</defName>
+    <letterText>the blinding of {TARGET_labelShort}</letterText>
+    <weight>100</weight>
+    <daysLength>15</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>ScarificationCeremony</defName>
+    <letterText>the new scars of {TARGET_labelShort}</letterText>
+    <weight>100</weight>
+    <daysLength>15</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>TreeConnection</defName>
+    <letterText>the linking of {TARGET_labelShort} to a gauranlen tree</letterText>
+    <weight>100</weight>
+    <daysLength>15</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Conversion</defName>
+    <letterText>the conversion of {TARGET_labelShort}</letterText>
+    <weight>100</weight>
+    <daysLength>7</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>GladiatorDuel</defName>
+    <letterText>the gladiator duel between {TARGET_labelShort} and {TARGET2_labelShort}</letterText>
+    <weight>100</weight>
+    <daysLength>15</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Execution</defName>
+    <letterText>{TARGET_labelShort}'s execution of {TARGET2_labelShort}</letterText>
+    <weight>100</weight>
+    <daysLength>7</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>SacrificePrisoner</defName>
+    <letterText>{TARGET_labelShort}'s sacrificial killing of {TARGET2_labelShort}</letterText>
+    <weight>100</weight>
+    <daysLength>7</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>RoleChange</defName>
+    <letterText>{TARGET_labelShort}'s new role in the community</letterText>
+    <weight>50</weight>
+    <daysLength>7</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Trial</defName>
+    <letterText>the outcome of {TARGET_labelShort}'s trial</letterText>
+    <weight>100</weight>
+    <daysLength>7</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>ThroneSpeech</defName>
+    <letterText>{TARGET_labelShort}'s speech</letterText>
+    <weight>10</weight>
+    <daysLength>3</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>LeaderSpeech</defName>
+    <letterText>{TARGET_labelShort}'s speech</letterText>
+    <weight>10</weight>
+    <daysLength>3</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+
+  <MeaningfulParties.PartyCauseDef>
+    <defName>VEE_IceAge</defName>
+    <letterText>the end of the recent ice age</letterText>
+    <weight>250</weight>
+    <daysLength>30</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>VEE_GlobalWarming</defName>
+    <letterText>the end of the recent phase of global warming</letterText>
+    <weight>250</weight>
+    <daysLength>30</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>VEE_PsychicRain</defName>
+    <letterText>the end of the weeks of psychic rain</letterText>
+    <weight>250</weight>
+    <daysLength>10</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>VEE_LongNight</defName>
+    <letterText>the end of the long night</letterText>
+    <weight>250</weight>
+    <daysLength>10</daysLength>
   </MeaningfulParties.PartyCauseDef>
 
 </Defs>
