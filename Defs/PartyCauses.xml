@@ -208,7 +208,7 @@
   </MeaningfulParties.PartyCauseDef>
   <MeaningfulParties.PartyCauseDef>
     <defName>FinishedResearchProject</defName>
-    <letterText>{TARGET_labelShort}'s discovery of {TARGET2_label}</letterText>
+    <letterText>{TARGET_labelShort}'s discovery of {TARGET2}</letterText>
     <weight>100</weight>
     <daysLength>5</daysLength>
   </MeaningfulParties.PartyCauseDef>
@@ -393,19 +393,19 @@
   <MeaningfulParties.PartyCauseDef>
     <defName>Jealous</defName>
     <letterText>{TARGET_labelShort}'s desire to one-up other parties</letterText>
-    <weight>20</weight>
+    <weight>30</weight>
     <daysLength>5</daysLength>
   </MeaningfulParties.PartyCauseDef>
   <MeaningfulParties.PartyCauseDef>
     <defName>Masochist</defName>
     <letterText>{TARGET_labelShort}'s love for pain</letterText>
-    <weight>20</weight>
+    <weight>10</weight>
     <daysLength>5</daysLength>
   </MeaningfulParties.PartyCauseDef>
   <MeaningfulParties.PartyCauseDef>
     <defName>Pyromaniac</defName>
     <letterText>{TARGET_labelShort}'s love of fire</letterText>
-    <weight>20</weight>
+    <weight>10</weight>
     <daysLength>5</daysLength>
   </MeaningfulParties.PartyCauseDef>
   <MeaningfulParties.PartyCauseDef>
@@ -435,7 +435,7 @@
   <MeaningfulParties.PartyCauseDef>
     <defName>CreepyBreathing</defName>
     <letterText>{TARGET_labelShort}'s creepy breathing</letterText>
-    <weight>20</weight>
+    <weight>10</weight>
     <daysLength>5</daysLength>
   </MeaningfulParties.PartyCauseDef>
   <MeaningfulParties.PartyCauseDef>
@@ -446,7 +446,7 @@
   </MeaningfulParties.PartyCauseDef>
   <MeaningfulParties.PartyCauseDef>
     <defName>Industriousness</defName>
-    <letterText>{TARGET_labelShort}'s hard work</letterText>
+    <letterText>{TARGET_labelShort}'s hard working attitude</letterText>
     <weight>20</weight>
     <daysLength>5</daysLength>
   </MeaningfulParties.PartyCauseDef>
@@ -471,7 +471,7 @@
   <MeaningfulParties.PartyCauseDef>
     <defName>Joyous</defName>
     <letterText>the joy {TARGET_labelShort} brings to everyone</letterText>
-    <weight>20</weight>
+    <weight>50</weight>
     <daysLength>5</daysLength>
   </MeaningfulParties.PartyCauseDef>
 
