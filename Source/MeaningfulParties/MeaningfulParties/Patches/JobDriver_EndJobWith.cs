@@ -12,12 +12,10 @@ namespace MeaningfulParties.Patches
     {
         private static HashSet<string> _jobs = new HashSet<string>
         {
-            nameof(PartyCauseDefOf.InstallImplant),
             nameof(PartyCauseDefOf.AbsorbXenogerm),
             nameof(PartyCauseDefOf.ActivateMonolith),
             nameof(PartyCauseDefOf.BuildCubeStructure),
             nameof(PartyCauseDefOf.CreateXenogerm),
-            nameof(PartyCauseDefOf.DevourerDigest),
             nameof(PartyCauseDefOf.NociosphereDepart),
             nameof(PartyCauseDefOf.Nuzzle),
             nameof(PartyCauseDefOf.Play_Hoopstone),
@@ -31,54 +29,39 @@ namespace MeaningfulParties.Patches
             nameof(PartyCauseDefOf.UseTelescope),
             nameof(PartyCauseDefOf.ReleaseAnimalToWild),
             nameof(PartyCauseDefOf.ActivateArchonexusCore),
-            nameof(PartyCauseDefOf.EmancipateSlave),
+            nameof(PartyCauseDefOf.SlaveEmancipation),
             nameof(PartyCauseDefOf.ReleasePrisoner),
-            nameof(PartyCauseDefOf.Lessontaking)
+            nameof(PartyCauseDefOf.Lessontaking),
+            nameof(PartyCauseDefOf.Resurrect)
         };
 
         private static object[] GetArgsForJob(string jobDefName, JobDriver jobDriver)
         {
             var args = new object[] { jobDriver.pawn, jobDriver.job.targetA };
 
-            switch (jobDefName)
-            {
-                case nameof(JobDefOf.InstallImplant):
-                {
-                    args[0] = jobDriver.job.targetA;
-                    args[1] = jobDriver.job.targetB;
-                    break;
-                }
-                case nameof(JobDefOf.DevourerDigest):
-                {
-                    args[0] = ((JobDriver_DevourerDigest)jobDriver).pawn.GetComp<CompDevourer>().DigestingPawn;
-                    break;
-                }
-            }
-
             return args;
         }
 
-        public static void Postfix(JobDriver __instance, JobCondition condition)
+        public static void Prefix(JobDriver __instance, JobCondition condition)
         {
+            if (__instance.job == null || __instance.pawn.CurJob != __instance.job)
+            {
+                return;
+            }
+
             if (condition != JobCondition.Succeeded)
             {
                 return;
             }
 
-            var defName = __instance.job.def.defName;
-            if (!_jobs.Contains(defName))
-            {
-                return;
-            }
-
-            if (__instance is JobDriver_DevourerDigest devourerDigest
-                && devourerDigest.pawn.GetComp<CompDevourer>().DigestingPawn?.IsColonist != true)
+            var defName = __instance.job?.def?.defName;
+            if (defName == null || !_jobs.Contains(defName))
             {
                 return;
             }
 
             var args = GetArgsForJob(defName, __instance);
-            PartyCauseDef.Named(defName).Push(args);
+            PartyCauseDef.Named(defName).Push(targets: args);
         }
     }
 }

@@ -1,17 +1,19 @@
 using System.Collections.Generic;
+using System.Reflection;
+using System.Reflection.Emit;
 using HarmonyLib;
 using MeaningfulParties.PartyCauses;
 using RimWorld;
+using Verse;
 
 namespace MeaningfulParties.Patches
 {
-    [HarmonyPatch(typeof(RitualOutcomeEffectWorker), nameof(RitualOutcomeEffectWorker.Apply))]
-    public class RitualOutcomeEffectWorker_Apply
+    [HarmonyPatch(typeof(LordJob_Ritual), nameof(LordJob_Ritual.ApplyOutcome))]
+    public class LordJob_Ritual_ApplyOutcome
     {
         private static HashSet<string> _rituals = new HashSet<string>
         {
             nameof(PartyCauseDefOf.AnimaTreeLinking),
-            nameof(PartyCauseDefOf.Bestowing),
             nameof(PartyCauseDefOf.BlindingCeremony),
             nameof(PartyCauseDefOf.ScarificationCeremony),
             nameof(PartyCauseDefOf.TreeConnection),
@@ -74,13 +76,36 @@ namespace MeaningfulParties.Patches
             return new object[2];
         }
 
-        public static void Postfix(LordJob_Ritual jobRitual)
+        public static void AddPartyCause(LordJob_Ritual jobRitual)
         {
             var ritualDefName = jobRitual.Ritual.behavior.def.defName;
             if (_rituals.Contains(ritualDefName))
             {
                 var args = GetArgsForRitual(ritualDefName, jobRitual);
                 PartyCauseDef.Named(ritualDefName).Push(args);
+            }
+        }
+
+        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+        {
+            var existingApply = AccessTools.Method(typeof(RitualOutcomeEffectWorker), "Apply");
+            var found = false;
+            foreach (var instruction in instructions)
+            {
+                yield return instruction;
+
+                if (instruction.opcode == OpCodes.Callvirt && (MethodInfo)instruction.operand == existingApply)
+                {
+                    yield return new CodeInstruction(OpCodes.Ldarg_0);
+                    yield return new CodeInstruction(OpCodes.Call,
+                        typeof(LordJob_Ritual_ApplyOutcome).GetMethod(nameof(AddPartyCause)));
+                    found = true;
+                }
+            }
+
+            if (!found)
+            {
+                Log.Error($"Failed to find MethodInfo {existingApply} in patch {nameof(LordJob_Ritual_ApplyOutcome)}");
             }
         }
     }

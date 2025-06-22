@@ -62,9 +62,10 @@ namespace MeaningfulParties.PartyCauses
             }
         }
 
-        private static readonly IEnumerable<Pawn> ColonistsAndBondedAnimals = Find.Maps
-            .SelectMany(map => map.mapPawns.FreeColonists)
-            .Concat(Find.Maps.SelectMany(map => map.mapPawns.ColonyAnimals)
+        private static IEnumerable<Pawn> ColonistsAndBondedAnimals() => Find.Maps
+            .SelectMany(map => map.mapPawns.AllHumanlike)
+            .Where(pawn => pawn.IsColonist)
+            .Concat(Find.Maps.SelectMany(map => map.mapPawns.SpawnedColonyAnimals)
                 .Where(animal => animal.relations.DirectRelations
                     .Any(bond => bond.def == PawnRelationDefOf.Bond)));
 
@@ -73,14 +74,14 @@ namespace MeaningfulParties.PartyCauses
             if (_lastDay != GenDate.DaysPassed)
             {
                 _lastDay = GenDate.DaysPassed;
-                foreach (var colonist in ColonistsAndBondedAnimals)
+                foreach (var colonist in ColonistsAndBondedAnimals())
                 {
                     if (colonist.ageTracker.BirthDayOfYear == GenLocalDate.DayOfYear(colonist.Map.Tile))
                     {
                         PartyCauseDefOf.Birthday.Push(colonist);
                     }
 
-                    if (Random.Next(10) == 0)
+                    if (Random.Next(5) == 0)
                     {
                         TraitCauseHandler.AddTraitPartyCauses(colonist);
                     }

@@ -56,15 +56,16 @@
         <Compile Include="PartyCauses\PartyCauseDefOf.cs" />
         <Compile Include="PartyCauses\PartyCauseTracker.cs" />
         <Compile Include="PartyCauses\TraitCauseHandler.cs" />
-        <Compile Include="Patches\CompTargetEffect_Resurrect_DoEffectOn.cs" />
+        <Compile Include="Patches\CompDevourer_DigestJobFinished.cs" />
         <Compile Include="Patches\JobDriver_EndJobWith.cs" />
         <Compile Include="Patches\GameCondition_End.cs" />
         <Compile Include="Patches\GatheringWorker_SendLetter.cs" />
         <Compile Include="Patches\Hediff_Pregnant_NotifyPlayerOfTrimesterPassing.cs" />
         <Compile Include="Patches\IncidentWorker_TryExecute.cs" />
-        <Compile Include="Patches\RitualOutcomeEffectWorker_Apply.cs" />
+        <Compile Include="Patches\LordJob_Ritual_ApplyOutcome.cs" />
         <Compile Include="Patches\LordJob_BestowingCeremony_FinishCeremony.cs" />
         <Compile Include="Patches\Pawn_HealthTracker_RemoveHediff.cs" />
+        <Compile Include="Patches\Recipe_Surgery_OnSurgerySuccess.cs" />
         <Compile Include="Patches\TaleRecorder_RecordTale.cs" />
         <Compile Include="Properties\AssemblyInfo.cs"/>
     </ItemGroup>

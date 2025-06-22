@@ -54,16 +54,16 @@ namespace MeaningfulParties.PartyCauses
         // Others
         public static PartyCauseDef BestowingCeremony;
         public static PartyCauseDef Birthday;
-        public static PartyCauseDef Resurrection;
+        public static PartyCauseDef Resurrect;
         public static PartyCauseDef BabyShower;
+        public static PartyCauseDef InstallImplant;
+        public static PartyCauseDef DevourerDigest;
 
         // JobDriver_EndJobWith
-        public static PartyCauseDef InstallImplant;
         public static PartyCauseDef AbsorbXenogerm;
         public static PartyCauseDef ActivateMonolith;
         public static PartyCauseDef BuildCubeStructure;
         public static PartyCauseDef CreateXenogerm;
-        public static PartyCauseDef DevourerDigest;
         public static PartyCauseDef NociosphereDepart;
         public static PartyCauseDef Nuzzle;
         public static PartyCauseDef Play_Hoopstone;
@@ -77,7 +77,7 @@ namespace MeaningfulParties.PartyCauses
         public static PartyCauseDef UseTelescope;
         public static PartyCauseDef ReleaseAnimalToWild;
         public static PartyCauseDef ActivateArchonexusCore;
-        public static PartyCauseDef EmancipateSlave;
+        public static PartyCauseDef SlaveEmancipation;
         public static PartyCauseDef ReleasePrisoner;
         public static PartyCauseDef Lessontaking;
 
@@ -128,7 +128,6 @@ namespace MeaningfulParties.PartyCauses
 
         // RitualOutcomeEffectWorker_apply
         public static PartyCauseDef AnimaTreeLinking;
-        public static PartyCauseDef Bestowing;
         public static PartyCauseDef BlindingCeremony;
         public static PartyCauseDef ScarificationCeremony;
         public static PartyCauseDef TreeConnection;

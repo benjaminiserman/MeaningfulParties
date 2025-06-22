@@ -17,7 +17,7 @@ namespace MeaningfulParties.PartyCauses
         }
 
         public bool IsDuplicateOf(PartyCause otherCause) =>
-            Def == otherCause.Def
+            Def.defName == otherCause.Def.defName
             && Target == otherCause.Target
             && Target2 == otherCause.Target2;
     }
