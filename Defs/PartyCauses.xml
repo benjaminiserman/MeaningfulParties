@@ -2,7 +2,7 @@
 <Defs>
   <MeaningfulParties.PartyCauseDef>
     <defName>Perseverance</defName>
-    <letterText>the colony's perseverance</letterText>
+    <letterText>the community's perseverance</letterText>
     <weight>1</weight>
     <daysLength>0</daysLength>
   </MeaningfulParties.PartyCauseDef>
@@ -51,7 +51,7 @@
   </MeaningfulParties.PartyCauseDef>
   <MeaningfulParties.PartyCauseDef>
     <defName>PsychicSoothe</defName>
-    <letterText>the archotech soothing the colony</letterText>
+    <letterText>the archotech soothing the community</letterText>
     <weight>20</weight>
     <daysLength>3</daysLength>
   </MeaningfulParties.PartyCauseDef>
@@ -238,12 +238,6 @@
     <daysLength>2</daysLength>
   </MeaningfulParties.PartyCauseDef>
   <MeaningfulParties.PartyCauseDef>
-    <defName>Implant</defName>
-    <letterText>the successful implant of a {TARGET2_label} into {TARGET_labelShort}</letterText>
-    <weight>50</weight>
-    <daysLength>5</daysLength>
-  </MeaningfulParties.PartyCauseDef>
-  <MeaningfulParties.PartyCauseDef>
     <defName>Resurrection</defName>
     <letterText>the resurrection of {TARGET_labelShort}</letterText>
     <weight>1000</weight>
@@ -260,6 +254,140 @@
     <letterText>{TARGET_labelShort}'s newly bestown powers</letterText>
     <weight>100</weight>
     <daysLength>15</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+
+
+  <MeaningfulParties.PartyCauseDef>
+    <defName>InstallImplant</defName>
+    <letterText>the successful implant of a {TARGET2_label} into {TARGET_labelShort}</letterText>
+    <weight>50</weight>
+    <daysLength>5</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>AbsorbXenogerm</defName>
+    <letterText>{TARGET_labelShort}'s absorption of {TARGET2_labelShort}'s xenogerm</letterText>
+    <weight>50</weight>
+    <daysLength>5</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>ActivateMonolith</defName>
+    <letterText>the activation of the monolith</letterText>
+    <weight>50</weight>
+    <daysLength>5</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>BuildCubeStructure</defName>
+    <letterText>the construction of a beautiful cube</letterText>
+    <weight>1000</weight>
+    <daysLength>1</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>CreateXenogerm</defName>
+    <letterText>the creation of a new xenogerm</letterText>
+    <weight>25</weight>
+    <daysLength>3</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>DevourerDigest</defName>
+    <letterText>the digestion of {TARGET2_labelShort} by a devourer</letterText>
+    <weight>1</weight>
+    <daysLength>3</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>NociosphereDepart</defName>
+    <letterText>the departure of the nociosphere </letterText>
+    <weight>50</weight>
+    <daysLength>5</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Nuzzle</defName>
+    <letterText>{TARGET_labelShort}'s nuzzling</letterText>
+    <weight>5</weight>
+    <daysLength>5</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Play_Hoopstone</defName>
+    <letterText>{TARGET_labelShort}'s incredible hoopstone throw</letterText>
+    <weight>1</weight>
+    <daysLength>1</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Play_Horseshoes</defName>
+    <letterText>{TARGET_labelShort}'s incredible horseshoe throw</letterText>
+    <weight>1</weight>
+    <daysLength>1</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Play_GameOfUr</defName>
+    <letterText>{TARGET_labelShort}'s win at a match of the Game of Ur</letterText>
+    <weight>1</weight>
+    <daysLength>1</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Play_Chess</defName>
+    <letterText>{TARGET_labelShort}'s win at a game of chess</letterText>
+    <weight>1</weight>
+    <daysLength>1</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Play_Billiards</defName>
+    <letterText>{TARGET_labelShort}'s dexterous billiards play</letterText>
+    <weight>1</weight>
+    <daysLength>1</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Play_MusicalInstrument</defName>
+    <letterText>{TARGET_labelShort}'s musical ability</letterText>
+    <weight>1</weight>
+    <daysLength>1</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Play_Poker</defName>
+    <letterText>{TARGET_labelShort}'s royal flush</letterText>
+    <weight>1</weight>
+    <daysLength>1</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>WatchTelevision</defName>
+    <letterText>the finale of a beloved TV series</letterText>
+    <weight>1</weight>
+    <daysLength>1</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>UseTelescope</defName>
+    <letterText>{TARGET_labelShort} finding a new planet on the telescope</letterText>
+    <weight>1</weight>
+    <daysLength>1</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>ReleaseAnimalToWild</defName>
+    <letterText>the release of an animal into the wild</letterText>
+    <weight>5</weight>
+    <daysLength>1</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>ActivateArchonexusCore</defName>
+    <letterText>the activation of the archonexus core</letterText>
+    <weight>250</weight>
+    <daysLength>5</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>SlaveEmancipation</defName>
+    <letterText>{TARGET2_labelShort}'s emancipation</letterText>
+    <weight>100</weight>
+    <daysLength>10</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>ReleasePrisoner</defName>
+    <letterText>the release of {TARGET2_labelShort}</letterText>
+    <weight>2</weight>
+    <daysLength>1</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
+    <defName>Lessontaking</defName>
+    <letterText>{TARGET_labelShort}'s successful lessons in school</letterText>
+    <weight>5</weight>
+    <daysLength>1</daysLength>
   </MeaningfulParties.PartyCauseDef>
 
   <MeaningfulParties.PartyCauseDef>

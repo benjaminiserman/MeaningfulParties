@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using RimWorld;
+
 // ReSharper disable UnassignedField.Global
 
 namespace MeaningfulParties.PartyCauses
@@ -53,9 +54,32 @@ namespace MeaningfulParties.PartyCauses
         // Others
         public static PartyCauseDef BestowingCeremony;
         public static PartyCauseDef Birthday;
-        public static PartyCauseDef Implant;
         public static PartyCauseDef Resurrection;
         public static PartyCauseDef BabyShower;
+
+        // JobDriver_EndJobWith
+        public static PartyCauseDef InstallImplant;
+        public static PartyCauseDef AbsorbXenogerm;
+        public static PartyCauseDef ActivateMonolith;
+        public static PartyCauseDef BuildCubeStructure;
+        public static PartyCauseDef CreateXenogerm;
+        public static PartyCauseDef DevourerDigest;
+        public static PartyCauseDef NociosphereDepart;
+        public static PartyCauseDef Nuzzle;
+        public static PartyCauseDef Play_Hoopstone;
+        public static PartyCauseDef Play_Horseshoes;
+        public static PartyCauseDef Play_GameOfUr;
+        public static PartyCauseDef Play_Chess;
+        public static PartyCauseDef Play_Billiards;
+        public static PartyCauseDef Play_MusicalInstrument;
+        public static PartyCauseDef Play_Poker;
+        public static PartyCauseDef WatchTelevision;
+        public static PartyCauseDef UseTelescope;
+        public static PartyCauseDef ReleaseAnimalToWild;
+        public static PartyCauseDef ActivateArchonexusCore;
+        public static PartyCauseDef EmancipateSlave;
+        public static PartyCauseDef ReleasePrisoner;
+        public static PartyCauseDef Lessontaking;
 
         // Traits
         public static PartyCauseDef Jealous;
@@ -101,44 +125,37 @@ namespace MeaningfulParties.PartyCauses
         public static PartyCauseDef PsychiteAddiction;
         public static PartyCauseDef SmokeleafAddiction;
         public static PartyCauseDef WakeUpAddiction;
-        
+
         // RitualOutcomeEffectWorker_apply
-		public static PartyCauseDef AnimaTreeLinking;
-		public static PartyCauseDef Bestowing;
-		public static PartyCauseDef BlindingCeremony;
-		public static PartyCauseDef ScarificationCeremony;
-		public static PartyCauseDef TreeConnection;
-		public static PartyCauseDef Conversion;
-		public static PartyCauseDef GladiatorDuel;
-		public static PartyCauseDef Execution;
-		public static PartyCauseDef SacrificePrisoner;
-		public static PartyCauseDef RoleChange;
-		public static PartyCauseDef Trial;
-		public static PartyCauseDef ThroneSpeech;
-		public static PartyCauseDef LeaderSpeech;
+        public static PartyCauseDef AnimaTreeLinking;
+        public static PartyCauseDef Bestowing;
+        public static PartyCauseDef BlindingCeremony;
+        public static PartyCauseDef ScarificationCeremony;
+        public static PartyCauseDef TreeConnection;
+        public static PartyCauseDef Conversion;
+        public static PartyCauseDef GladiatorDuel;
+        public static PartyCauseDef Execution;
+        public static PartyCauseDef SacrificePrisoner;
+        public static PartyCauseDef RoleChange;
+        public static PartyCauseDef Trial;
+        public static PartyCauseDef ThroneSpeech;
+        public static PartyCauseDef LeaderSpeech;
 
         // Vanilla Events Expanded compat
-        [MayRequire("VanillaExpanded.VEE")]
-        public static PartyCauseDef VEE_IceAge;
-        [MayRequire("VanillaExpanded.VEE")]
-        public static PartyCauseDef VEE_GlobalWarming;
-        [MayRequire("VanillaExpanded.VEE")]
-        public static PartyCauseDef VEE_PsychicRain;
-        [MayRequire("VanillaExpanded.VEE")]
-        public static PartyCauseDef VEE_LongNight;
+        [MayRequire("VanillaExpanded.VEE")] public static PartyCauseDef VEE_IceAge;
+        [MayRequire("VanillaExpanded.VEE")] public static PartyCauseDef VEE_GlobalWarming;
+        [MayRequire("VanillaExpanded.VEE")] public static PartyCauseDef VEE_PsychicRain;
+        [MayRequire("VanillaExpanded.VEE")] public static PartyCauseDef VEE_LongNight;
 
-        public static IEnumerable<PartyCauseDef> GetDefaultPartyCauseDefs()
+        public static IEnumerable<PartyCauseDef> GetDefaultPartyCauseDefs() => new List<PartyCauseDef>
         {
-            return new List<PartyCauseDef>()
-            {
-                Perseverance,
-                GoodTimes,
-                Comradery,
-                Serenity,
-                StillAlive,
-                Fallen,
-                CalmBeforeStorm
-            };
-        }
+            Perseverance,
+            GoodTimes,
+            Comradery,
+            Serenity,
+            StillAlive,
+            Fallen,
+            CalmBeforeStorm
+        };
     }
 }

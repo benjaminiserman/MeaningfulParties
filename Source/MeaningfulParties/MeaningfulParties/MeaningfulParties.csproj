@@ -57,7 +57,7 @@
         <Compile Include="PartyCauses\PartyCauseTracker.cs" />
         <Compile Include="PartyCauses\TraitCauseHandler.cs" />
         <Compile Include="Patches\CompTargetEffect_Resurrect_DoEffectOn.cs" />
-        <Compile Include="Patches\CompUseEffect_InstallImplant_DoEffect.cs" />
+        <Compile Include="Patches\JobDriver_EndJobWith.cs" />
         <Compile Include="Patches\GameCondition_End.cs" />
         <Compile Include="Patches\GatheringWorker_SendLetter.cs" />
         <Compile Include="Patches\Hediff_Pregnant_NotifyPlayerOfTrimesterPassing.cs" />
