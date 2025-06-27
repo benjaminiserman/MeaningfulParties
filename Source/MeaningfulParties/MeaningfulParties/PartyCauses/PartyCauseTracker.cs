@@ -66,7 +66,7 @@ namespace MeaningfulParties.PartyCauses
             .SelectMany(map => map.mapPawns.AllHumanlike)
             .Where(pawn => pawn.IsColonist)
             .Concat(Find.Maps.SelectMany(map => map.mapPawns.SpawnedColonyAnimals)
-                .Where(animal => animal.relations.DirectRelations
+                .Where(animal => animal.relations != null && animal.relations.DirectRelations
                     .Any(bond => bond.def == PawnRelationDefOf.Bond)));
 
         public override void WorldComponentTick()
@@ -76,7 +76,7 @@ namespace MeaningfulParties.PartyCauses
                 _lastDay = GenDate.DaysPassed;
                 foreach (var colonist in ColonistsAndBondedAnimals())
                 {
-                    if (colonist.ageTracker.BirthDayOfYear == GenLocalDate.DayOfYear(colonist.Map.Tile))
+                    if (colonist.ageTracker?.BirthDayOfYear == GenLocalDate.DayOfYear(colonist.Map.Tile))
                     {
                         PartyCauseDefOf.Birthday.Push(colonist);
                     }
