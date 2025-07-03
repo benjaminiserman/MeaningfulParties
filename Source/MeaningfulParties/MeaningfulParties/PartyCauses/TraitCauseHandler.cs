@@ -37,8 +37,18 @@ namespace MeaningfulParties.PartyCauses
 
         public static void AddTraitPartyCauses(Pawn pawn)
         {
+            if (pawn?.story?.traits?.allTraits == null)
+            {
+                return;
+            }
+
             foreach (var trait in pawn.story.traits.allTraits)
             {
+                if (trait?.def?.defName == null)
+                {
+                    continue;
+                }
+
                 if (TraitPartyCauses.ContainsKey(trait.def.defName))
                 {
                     TraitPartyCauses[trait.def.defName].Push(pawn);
@@ -47,7 +57,7 @@ namespace MeaningfulParties.PartyCauses
                 if (ScaledTraitCauses.ContainsKey(trait.def.defName)
                     && ScaledTraitCauses[trait.def.defName].matches(trait.Degree))
                 {
-                    ScaledTraitCauses[trait.def.defName].def.Push(pawn);
+                    ScaledTraitCauses[trait.def.defName].def?.Push(pawn);
                 }
             }
         }
