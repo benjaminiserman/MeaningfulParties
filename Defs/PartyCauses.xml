@@ -123,6 +123,12 @@
     <daysLength>10</daysLength>
   </MeaningfulParties.PartyCauseDef>
   <MeaningfulParties.PartyCauseDef>
+    <defName>GaveBirthAnimal</defName>
+    <letterText>the birth of {TARGET2_labelShort}</letterText>
+    <weight>50</weight>
+    <daysLength>3</daysLength>
+  </MeaningfulParties.PartyCauseDef>
+  <MeaningfulParties.PartyCauseDef>
     <defName>Breakup</defName>
     <letterText>{TARGET_labelShort}'s breakup with {TARGET2_labelShort}</letterText>
     <weight>50</weight>

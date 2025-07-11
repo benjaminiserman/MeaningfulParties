@@ -35,6 +35,7 @@ namespace MeaningfulParties.PartyCauses
         public static PartyCauseDef BondedWithAnimal;
         public static PartyCauseDef BecameLover;
         public static PartyCauseDef GaveBirth;
+        public static PartyCauseDef GaveBirthAnimal;
         public static PartyCauseDef Breakup;
         public static PartyCauseDef SocialFight;
         public static PartyCauseDef CollapseDodged;

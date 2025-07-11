@@ -76,7 +76,8 @@ namespace MeaningfulParties.PartyCauses
                 _lastDay = GenDate.DaysPassed;
                 foreach (var colonist in ColonistsAndBondedAnimals())
                 {
-                    if (colonist.ageTracker?.BirthDayOfYear == GenLocalDate.DayOfYear(colonist.Map.Tile))
+                    var tile = colonist.Map?.Tile;
+                    if (tile != null && colonist.ageTracker?.BirthDayOfYear == GenLocalDate.DayOfYear((int)tile))
                     {
                         PartyCauseDefOf.Birthday.Push(colonist);
                     }

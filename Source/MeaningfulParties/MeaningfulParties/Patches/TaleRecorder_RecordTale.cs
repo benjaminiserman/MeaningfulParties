@@ -3,6 +3,7 @@ using System.Linq;
 using HarmonyLib;
 using MeaningfulParties.PartyCauses;
 using RimWorld;
+using Verse;
 
 namespace MeaningfulParties.Patches
 {
@@ -15,7 +16,6 @@ namespace MeaningfulParties.Patches
             nameof(PartyCauseDefOf.Recruited),
             nameof(PartyCauseDefOf.BondedWithAnimal),
             nameof(PartyCauseDefOf.BecameLover),
-            nameof(PartyCauseDefOf.GaveBirth),
             nameof(PartyCauseDefOf.Breakup),
             nameof(PartyCauseDefOf.SocialFight),
             nameof(PartyCauseDefOf.CollapseDodged),
@@ -38,6 +38,20 @@ namespace MeaningfulParties.Patches
             if (_tales.Contains(def.defName))
             {
                 PartyCauseDef.Named(def.defName).Push(targets: args);
+            }
+
+            if (def.defName == nameof(PartyCauseDefOf.GaveBirth))
+            {
+                var pawn = args[0] as Pawn;
+
+                if (pawn.IsNonMutantAnimal && !pawn.Name.ToStringShort.Any(char.IsDigit))
+                {
+                    PartyCauseDefOf.GaveBirthAnimal.Push(targets: args);
+                }
+                else if (pawn.IsColonist)
+                {
+                    PartyCauseDefOf.GaveBirth.Push(targets: args);
+                }
             }
         }
     }
