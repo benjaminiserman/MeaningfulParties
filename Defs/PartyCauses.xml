@@ -209,14 +209,14 @@
   <MeaningfulParties.PartyCauseDef>
     <defName>StruckMineable</defName>
     <letterText>{TARGET_labelShort}'s discovery of a vein of {TARGET2_label}</letterText>
-    <weight>100</weight>
-    <daysLength>3</daysLength>
+    <weight>50</weight>
+    <daysLength>2</daysLength>
   </MeaningfulParties.PartyCauseDef>
   <MeaningfulParties.PartyCauseDef>
     <defName>FinishedResearchProject</defName>
     <letterText>{TARGET_labelShort}'s discovery of {TARGET2}</letterText>
-    <weight>100</weight>
-    <daysLength>5</daysLength>
+    <weight>50</weight>
+    <daysLength>3</daysLength>
   </MeaningfulParties.PartyCauseDef>
   <MeaningfulParties.PartyCauseDef>
     <defName>RaidEnemy</defName>

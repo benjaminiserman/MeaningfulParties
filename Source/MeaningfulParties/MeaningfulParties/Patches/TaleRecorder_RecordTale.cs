@@ -44,13 +44,16 @@ namespace MeaningfulParties.Patches
             {
                 var pawn = args[0] as Pawn;
 
-                if (pawn.IsNonMutantAnimal && !pawn.Name.ToStringShort.Any(char.IsDigit))
+                if (pawn != null)
                 {
-                    PartyCauseDefOf.GaveBirthAnimal.Push(targets: args);
-                }
-                else if (pawn.IsColonist)
-                {
-                    PartyCauseDefOf.GaveBirth.Push(targets: args);
+                    if (pawn.IsAnimal && !pawn.Name.ToStringShort.Any(char.IsDigit))
+                    {
+                        PartyCauseDefOf.GaveBirthAnimal.Push(targets: args);
+                    }
+                    else if (pawn.IsColonist)
+                    {
+                        PartyCauseDefOf.GaveBirth.Push(targets: args);
+                    }
                 }
             }
         }
