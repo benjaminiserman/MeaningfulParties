@@ -8,6 +8,10 @@ namespace MeaningfulParties.Patches
     [HarmonyPatch(typeof(GatheringWorker), "SendLetter")]
     public class GatheringWorker_SendLetter
     {
+        private static string[] replaceableDefs = new[]
+        {
+            "Party", "VSIE_OutdoorParty", "VSIE_BingeParty"
+        };
         static bool Prefix(GatheringWorker __instance, IntVec3 spot, Pawn organizer)
         {
             if (__instance.def.defName != "Party")
