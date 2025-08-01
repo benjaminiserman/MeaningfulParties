@@ -20,7 +20,6 @@ namespace MeaningfulParties.Patches
             nameof(PartyCauseDefOf.SocialFight),
             nameof(PartyCauseDefOf.CollapseDodged),
             nameof(PartyCauseDefOf.CaravanAssaultSuccessful),
-            nameof(PartyCauseDefOf.GainedMasterSkillWithPassion),
             nameof(PartyCauseDefOf.CompletedLongConstructionProject),
             nameof(PartyCauseDefOf.CompletedLongCraftingProject),
             nameof(PartyCauseDefOf.DefeatedHostileFactionLeader),
@@ -38,6 +37,13 @@ namespace MeaningfulParties.Patches
             if (_tales.Contains(def.defName))
             {
                 PartyCauseDef.Named(def.defName).Push(targets: args);
+            }
+
+            if (def.defName == nameof(PartyCauseDefOf.GainedMasterSkillWithPassion))
+            {
+                var pawn = args[0] as Pawn;
+                var skill = (args[1] as SkillDef)?.label;
+                PartyCauseDef.Named(def.defName).Push(targets: new object[] { pawn, skill });
             }
 
             if (def.defName == nameof(PartyCauseDefOf.GaveBirth))

@@ -21,16 +21,6 @@ namespace MeaningfulParties
             var target1 = targets.Length >= 1 ? targets[0] : null;
             var target2 = targets.Length >= 2 ? targets[1] : null;
 
-            if (target1 is Def def1)
-            {
-                target1 = def1.defName;
-            }
-
-            if (target2 is Def def2)
-            {
-                target2 = def2.defName;
-            }
-
             var foundTracker = Find.World.GetComponent<PartyCauseTracker>();
             foundTracker.PushPartyCause(new PartyCause(GenDate.DaysPassed, this)
             {

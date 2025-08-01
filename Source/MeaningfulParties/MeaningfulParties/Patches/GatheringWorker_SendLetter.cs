@@ -1,3 +1,4 @@
+using System.Linq;
 using HarmonyLib;
 using MeaningfulParties.PartyCauses;
 using RimWorld;
@@ -8,13 +9,14 @@ namespace MeaningfulParties.Patches
     [HarmonyPatch(typeof(GatheringWorker), "SendLetter")]
     public class GatheringWorker_SendLetter
     {
-        private static string[] replaceableDefs = new[]
+        private static string[] replaceableDefs =
         {
             "Party", "VSIE_OutdoorParty", "VSIE_BingeParty"
         };
+
         static bool Prefix(GatheringWorker __instance, IntVec3 spot, Pawn organizer)
         {
-            if (__instance.def.defName != "Party")
+            if (!replaceableDefs.Contains(__instance.def.defName))
             {
                 return true;
             }

@@ -5,26 +5,24 @@
     <mods>
       <li>Vanilla Social Interactions Expanded</li>
     </mods>
-    <Operation Class="PatchOperationReplace">
+    <match Class="PatchOperationReplace">
       <xpath>/Defs/GatheringDef[defName="VSIE_BingeParty"]/letterText</xpath>
       <value>
         <letterText>{ORGANIZER_labelShort} suggests doing a little binge party to celebrate {CELEBRATION}. Be warned - Binge parties can last up to a few hours. Colonists will binge on food and drugs until it is over. Simply draft your colonists to stop them taking part in the binge party.</letterText>
       </value>
-    </Operation>
+    </match>
   </Operation>
 
-  
-  
   <Operation Class="PatchOperationFindMod">
     <mods>
       <li>Vanilla Social Interactions Expanded</li>
     </mods>
-    <Operation Class="PatchOperationReplace">
+    <match Class="PatchOperationReplace">
       <xpath>/Defs/GatheringDef[defName="VSIE_OutdoorParty"]/letterText</xpath>
       <value>
         <letterText>{ORGANIZER_labelShort} suggests having an outdoors party to celebrate {CELEBRATION}. Colonists will go outdoors and have a campfire, and then sit around it and talk.</letterText>
       </value>
-    </Operation>
+    </match>
   </Operation>
 
 </Patch>
