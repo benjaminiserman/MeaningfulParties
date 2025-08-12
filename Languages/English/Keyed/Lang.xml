@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <Party_letterText>{ORGANIZER_labelShort} is throwing a party to celebrate {CELEBRATION}! Everyone who goes will gain recreation and social energy, and a lasting positive mood boost.</Party_letterText>
+
+    <VSIE_BingeParty_letterText>{ORGANIZER_labelShort} suggests doing a little binge party to celebrate {CELEBRATION}. Be warned - Binge parties can last up to a few hours. Colonists will binge on food and drugs until it is over. Simply draft your colonists to stop them taking part in the binge party.</VSIE_BingeParty_letterText>
+    <VSIE_OutdoorParty_letterText>{ORGANIZER_labelShort} suggests having an outdoors party to celebrate {CELEBRATION}. Colonists will go outdoors and have a campfire, and then sit around it and talk.</VSIE_OutdoorParty_letterText>
+</LanguageData>

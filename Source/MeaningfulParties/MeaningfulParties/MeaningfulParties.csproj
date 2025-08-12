@@ -50,6 +50,7 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="LetterTextExtension.cs" />
         <Compile Include="MeaningfulPartiesMod.cs" />
         <Compile Include="PartyCauseDef.cs" />
         <Compile Include="PartyCauses\PartyCause.cs" />

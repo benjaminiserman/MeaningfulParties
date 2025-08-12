@@ -1,28 +1,33 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <Patch>
 
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>Vanilla Social Interactions Expanded</li>
-    </mods>
-    <match Class="PatchOperationReplace">
-      <xpath>/Defs/GatheringDef[defName="VSIE_BingeParty"]/letterText</xpath>
-      <value>
-        <letterText>{ORGANIZER_labelShort} suggests doing a little binge party to celebrate {CELEBRATION}. Be warned - Binge parties can last up to a few hours. Colonists will binge on food and drugs until it is over. Simply draft your colonists to stop them taking part in the binge party.</letterText>
-      </value>
-    </match>
-  </Operation>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Social Interactions Expanded</li>
+        </mods>
+        <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/GatheringDef[defName="VSIE_BingeParty"]</xpath>
+            <value>
+                <li Class="MeaningfulParties.LetterTextExtension">
+                    <letterText>VSIE_BingeParty_letterText</letterText>
+                </li>
+            </value>
+        </match>
+    </Operation>
 
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>Vanilla Social Interactions Expanded</li>
-    </mods>
-    <match Class="PatchOperationReplace">
-      <xpath>/Defs/GatheringDef[defName="VSIE_OutdoorParty"]/letterText</xpath>
-      <value>
-        <letterText>{ORGANIZER_labelShort} suggests having an outdoors party to celebrate {CELEBRATION}. Colonists will go outdoors and have a campfire, and then sit around it and talk.</letterText>
-      </value>
-    </match>
-  </Operation>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Social Interactions Expanded</li>
+        </mods>
+        <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/GatheringDef[defName="VSIE_OutdoorParty"]</xpath>
+            <value>
+                <li Class="MeaningfulParties.LetterTextExtension">
+                    <letterText>VSIE_OutdoorParty_letterText</letterText>
+                </li>
+            </value>
+        </match>
+    </Operation>
 
 </Patch>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Excluded>
+    <exclude>.git</exclude>
+    <exclude>Source\MeaningfulParties\.idea</exclude>
+    <exclude>Source\MeaningfulParties\MeaningfulParties\bin</exclude>
+    <exclude>Source\MeaningfulParties\MeaningfulParties\obj</exclude>
+    <exclude>Source\MeaningfulParties\packages</exclude>
+  </Excluded>
+</Configuration>

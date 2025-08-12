@@ -26,7 +26,8 @@ namespace MeaningfulParties.Patches
 
             Find.LetterStack.ReceiveLetter(
                 (TaggedString)__instance.def.letterTitle,
-                __instance.def.letterText.Formatted(organizer.Named("ORGANIZER"),
+                __instance.def.GetModExtension<LetterTextExtension>().letterText.Translate().Formatted(
+                    organizer.Named("ORGANIZER"),
                     partyCause.Def.letterText.Formatted(
                         partyCause.Target.Named("TARGET"),
                         partyCause.Target2.Named("TARGET2")
